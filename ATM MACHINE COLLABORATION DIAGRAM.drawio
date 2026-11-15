@@ -1,0 +1,207 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="_xQI01ofV9pXLz4t1qe-">
+    <mxGraphModel dx="1256" dy="1854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9fLnFdn7KZLfYVny9r10-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="480" width="620" x="40" y="-80" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="445" width="600" x="50" y="-55" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPerimeter=1;strokeWidth=2;" value="&lt;b&gt;CUSTOMER&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="80" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-12" edge="1" parent="1" source="Tc9MNTf98rXSV7DDWfUf-6" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.448;entryY=1.011;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=none;endFill=0;entryPerimeter=0;" target="9fLnFdn7KZLfYVny9r10-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=5;fontSize=11;" value=": ATM Machine" vertex="1">
+          <mxGeometry height="30" width="80" x="360" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=5;fontSize=11;" value=": Card Reader" vertex="1">
+          <mxGeometry height="30" width="80" x="140" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=5;fontSize=11;" value=": Bank Server" vertex="1">
+          <mxGeometry height="30" width="80" x="480" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-10" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Tc9MNTf98rXSV7DDWfUf-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="120" y="100" as="sourcePoint" />
+            <mxPoint x="260" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-11" edge="1" parent="1" source="Tc9MNTf98rXSV7DDWfUf-8" style="endArrow=none;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="70" y="210" as="sourcePoint" />
+            <mxPoint x="100" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-12" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.3;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;" target="Tc9MNTf98rXSV7DDWfUf-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="340" as="sourcePoint" />
+            <mxPoint x="380" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-13" edge="1" parent="1" source="Tc9MNTf98rXSV7DDWfUf-8" style="endArrow=none;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="Tc9MNTf98rXSV7DDWfUf-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="310" as="sourcePoint" />
+            <mxPoint x="410" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-14" edge="1" parent="1" source="Tc9MNTf98rXSV7DDWfUf-9" style="endArrow=none;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.587;entryY=1.001;entryDx=0;entryDy=0;entryPerimeter=0;" target="Tc9MNTf98rXSV7DDWfUf-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="310" as="sourcePoint" />
+            <mxPoint x="410" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-15" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="90" as="sourcePoint" />
+            <mxPoint x="210" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-16" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="115" as="sourcePoint" />
+            <mxPoint x="130" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-17" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="120" y="200" as="sourcePoint" />
+            <mxPoint x="140" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-18" edge="1" parent="1" source="Tc9MNTf98rXSV7DDWfUf-8" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=classic;innerLoopWaypoints=1;" target="Tc9MNTf98rXSV7DDWfUf-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="310" />
+              <mxPoint x="200" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1: Insert the card" vertex="1">
+          <mxGeometry height="10" width="110" x="125" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-20" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="210" as="sourcePoint" />
+            <mxPoint x="340" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="2: Read the card" vertex="1">
+          <mxGeometry height="10" width="110" x="140" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;" value="3: Screen initialization" vertex="1">
+          <mxGeometry height="10" width="130" x="230" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="4: Open Account" vertex="1">
+          <mxGeometry height="10" width="110" x="290" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-24" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=default;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="310" y="340" as="sourcePoint" />
+            <mxPoint x="390" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-25" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=default;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="360" as="sourcePoint" />
+            <mxPoint x="310" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="19: Return the card" vertex="1">
+          <mxGeometry height="10" width="110" x="300" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="5: Prompt input PIN" vertex="1">
+          <mxGeometry height="10" width="130" x="195" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="9: Prompt choose options" vertex="1">
+          <mxGeometry height="10" width="120" x="215" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="12: Prompt Amount" vertex="1">
+          <mxGeometry height="10" width="90" x="215" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="6: Input PIN" vertex="1">
+          <mxGeometry height="10" width="55" x="195" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="10: Choose options(withdraw money)" vertex="1">
+          <mxGeometry height="10" width="190" x="180" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="13: Input Amount" vertex="1">
+          <mxGeometry height="10" width="80" x="190" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="7: Verify PIN, Check balance" vertex="1">
+          <mxGeometry height="10" width="80" x="445" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="8: Authentication &amp;amp; Balance details" vertex="1">
+          <mxGeometry height="20" width="90" x="350" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-36" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=default;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="430" y="160" as="sourcePoint" />
+            <mxPoint x="460" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tc9MNTf98rXSV7DDWfUf-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="14: Check Account Balance" vertex="1">
+          <mxGeometry height="10" width="80" x="445" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-1" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;startArrow=classic;startFill=1;endFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="430" y="220" as="sourcePoint" />
+            <mxPoint x="460" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="15: Approve or reject withdrawal" vertex="1">
+          <mxGeometry height="20" width="90" x="350" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=5;fontSize=11;" value=": Cash Dispenser" vertex="1">
+          <mxGeometry height="30" width="80" x="560" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-5" edge="1" parent="1" source="Tc9MNTf98rXSV7DDWfUf-6" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=none;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="9fLnFdn7KZLfYVny9r10-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=default;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="450" y="85" as="sourcePoint" />
+            <mxPoint x="530" y="85" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="16: Dispense approved cash" vertex="1">
+          <mxGeometry height="20" width="90" x="445" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=default;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="525" y="110" as="sourcePoint" />
+            <mxPoint x="455" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="17: Confirm cash dispensed" vertex="1">
+          <mxGeometry height="20" width="90" x="470" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="18: Update account balance" vertex="1">
+          <mxGeometry height="10" width="80" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=5;fontSize=11;" value=": Maintenence Department" vertex="1">
+          <mxGeometry height="30" width="90" x="360" y="-40" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="20: Perform maintenance and troubleshooting" vertex="1">
+          <mxGeometry height="20" width="120" x="415" y="-5" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=default;align=left;verticalAlign=middle;rounded=0;labelBorderColor=none;fontSize=10;" value="21: Replenish cash and upadate software" vertex="1">
+          <mxGeometry height="20" width="120" x="415" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-15" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410" y="-2" as="sourcePoint" />
+            <mxPoint x="410" y="78" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9fLnFdn7KZLfYVny9r10-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;b&gt;COLLABORATION DIAGRAM FOR ATM MACHINE&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="420" x="145" y="-80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

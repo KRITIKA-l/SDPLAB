@@ -1,0 +1,248 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="qAwFWnyQS1z6iSeEPvkr">
+    <mxGraphModel dx="1108" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="510" width="510" x="160" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="480" width="490" x="170" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="m-yjPzbe4f3SFR_EZIPp-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};strokeWidth=2;" value="&lt;b&gt;:CUSTOMER&lt;/b&gt;" vertex="1">
+          <mxGeometry height="460" width="100" x="184" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="m-yjPzbe4f3SFR_EZIPp-14" parent="m-yjPzbe4f3SFR_EZIPp-1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="110" width="10" x="45" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-8" parent="m-yjPzbe4f3SFR_EZIPp-1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="150" width="10" x="45" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="m-yjPzbe4f3SFR_EZIPp-10" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};strokeWidth=2;" value="&lt;b&gt;:ATM&lt;/b&gt;" vertex="1">
+          <mxGeometry height="460" width="100" x="364" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-1" parent="m-yjPzbe4f3SFR_EZIPp-10" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-3" parent="m-yjPzbe4f3SFR_EZIPp-10" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="60" width="10" x="45" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-11" parent="m-yjPzbe4f3SFR_EZIPp-10" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="190" width="10" x="45" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="m-yjPzbe4f3SFR_EZIPp-11" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};strokeWidth=2;" value="&lt;b&gt;:BANK SERVER&lt;/b&gt;" vertex="1">
+          <mxGeometry height="460" width="100" x="544" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-5" parent="m-yjPzbe4f3SFR_EZIPp-11" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-15" parent="m-yjPzbe4f3SFR_EZIPp-11" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-24" parent="m-yjPzbe4f3SFR_EZIPp-11" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="45" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-25" edge="1" parent="m-yjPzbe4f3SFR_EZIPp-11" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" value="Debit amount">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-40.00000000000023" y="280" />
+            </Array>
+            <mxPoint x="-125" y="280" as="sourcePoint" />
+            <mxPoint x="45" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-26" edge="1" parent="m-yjPzbe4f3SFR_EZIPp-11" style="html=1;verticalAlign=bottom;endArrow=none;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;dashed=1;endFill=0;startArrow=classic;startFill=1;" value="Transaction OK">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-40.00000000000023" y="300" />
+            </Array>
+            <mxPoint x="-125" y="300" as="sourcePoint" />
+            <mxPoint x="45" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-yjPzbe4f3SFR_EZIPp-12" edge="1" parent="1" source="m-yjPzbe4f3SFR_EZIPp-14" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" target="v3mhEevUcGgoCcMS0gr_-1" value="Insert ATM Card">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="323.99999999999955" y="425" />
+            </Array>
+            <mxPoint x="234" y="425" as="sourcePoint" />
+            <mxPoint x="314" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-yjPzbe4f3SFR_EZIPp-13" edge="1" parent="1" source="m-yjPzbe4f3SFR_EZIPp-14" style="html=1;verticalAlign=bottom;endArrow=none;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;dashed=1;endFill=0;startArrow=classic;startFill=1;" target="v3mhEevUcGgoCcMS0gr_-1" value="Insert ATM Card">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="323.99999999999955" y="445" />
+            </Array>
+            <mxPoint x="234" y="445" as="sourcePoint" />
+            <mxPoint x="413" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-2" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" value="Enter PIN&amp;nbsp;">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="323.99999999999955" y="475" />
+            </Array>
+            <mxPoint x="239" y="475" as="sourcePoint" />
+            <mxPoint x="409" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-4" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" value="Validate Card and PIN">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="504" y="485" />
+            </Array>
+            <mxPoint x="419" y="485" as="sourcePoint" />
+            <mxPoint x="589" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-6" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;dashed=1;endFill=0;startArrow=classic;startFill=1;" value="PIN valid">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="504" y="505" />
+            </Array>
+            <mxPoint x="419" y="505" as="sourcePoint" />
+            <mxPoint x="589" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-7" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;dashed=1;endFill=0;startArrow=classic;startFill=1;" value="Display menu">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="323.99999999999955" y="515" />
+            </Array>
+            <mxPoint x="239" y="515" as="sourcePoint" />
+            <mxPoint x="409" y="515" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-9" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" value="Select cash withdrawal">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="323.99999999999955" y="555" />
+            </Array>
+            <mxPoint x="239" y="555" as="sourcePoint" />
+            <mxPoint x="409" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-10" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" value="Enter withdrawal amount">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="323.99999999999955" y="575" />
+            </Array>
+            <mxPoint x="239" y="575" as="sourcePoint" />
+            <mxPoint x="409" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-16" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;" value="Check balance">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="504" y="585" />
+            </Array>
+            <mxPoint x="419" y="585" as="sourcePoint" />
+            <mxPoint x="589" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-17" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;dashed=1;endFill=0;startArrow=classic;startFill=1;" value="Balance OK">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="504" y="605" />
+            </Array>
+            <mxPoint x="419" y="605" as="sourcePoint" />
+            <mxPoint x="589" y="605" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-27" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;dashed=1;endFill=0;startArrow=classic;startFill=1;" value="Dispense cash">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="323.99999999999955" y="665" />
+            </Array>
+            <mxPoint x="239" y="665" as="sourcePoint" />
+            <mxPoint x="409" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-28" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;dashed=1;endFill=0;startArrow=classic;startFill=1;" value="Print receipt">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="323.99999999999955" y="685" />
+            </Array>
+            <mxPoint x="239" y="685" as="sourcePoint" />
+            <mxPoint x="409" y="685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-29" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;dashed=1;endFill=0;startArrow=classic;startFill=1;" value="Display updated amount">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="323.99999999999955" y="705" />
+            </Array>
+            <mxPoint x="239" y="705" as="sourcePoint" />
+            <mxPoint x="409" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-30" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;dashed=1;endFill=0;startArrow=classic;startFill=1;" value="Eject card">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="323.99999999999955" y="725" />
+            </Array>
+            <mxPoint x="239" y="725" as="sourcePoint" />
+            <mxPoint x="409" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-32" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="224" y="810" as="sourcePoint" />
+            <mxPoint x="244" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-33" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="244" y="810" as="sourcePoint" />
+            <mxPoint x="224" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-34" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="584" y="705" as="sourcePoint" />
+            <mxPoint x="604" y="685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-35" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="604" y="705" as="sourcePoint" />
+            <mxPoint x="584" y="685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-36" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="404" y="810" as="sourcePoint" />
+            <mxPoint x="424" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-37" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="424" y="810" as="sourcePoint" />
+            <mxPoint x="404" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3mhEevUcGgoCcMS0gr_-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="SEQUENCE DIAGRAM OF ATM MACHINE" vertex="1">
+          <mxGeometry height="20" width="286" x="271" y="320" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

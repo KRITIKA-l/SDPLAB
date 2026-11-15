@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="B7MioFFlTn-pDBzpUMd6">
+    <mxGraphModel dx="2060" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="580" width="500" x="285" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="520" width="480" x="295" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-3" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-4" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="HnQro-MJMd22eXMn7Z4B-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=#000000;fontStyle=1" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="415" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1" value="Receive registration details" vertex="1">
+          <mxGeometry height="40" width="140" x="475" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-6" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-8" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;exitX=0.669;exitY=0.811;exitDx=0;exitDy=0;exitPerimeter=0;" target="HnQro-MJMd22eXMn7Z4B-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-7" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-8" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;exitX=0.76;exitY=0.245;exitDx=0;exitDy=0;exitPerimeter=0;" target="HnQro-MJMd22eXMn7Z4B-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-8" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=strokeColor;rotation=90;fontStyle=1" value="" vertex="1">
+          <mxGeometry height="160" width="5" x="542.5" y="322.5" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-9" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="544.68" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1" value="Retrieve Student details" vertex="1">
+          <mxGeometry height="40" width="140" x="395" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1" value="Retrieve Course details" vertex="1">
+          <mxGeometry height="40" width="140" x="565" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-12" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-13" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="HnQro-MJMd22eXMn7Z4B-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-13" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=strokeColor;rotation=90;fontStyle=1" value="" vertex="1">
+          <mxGeometry height="160" width="5" x="542.5" y="432.5" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-14" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-10" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.154;entryY=0.871;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="HnQro-MJMd22eXMn7Z4B-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-15" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-11" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.337;entryY=0.099;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="HnQro-MJMd22eXMn7Z4B-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-16" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-17" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="HnQro-MJMd22eXMn7Z4B-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1" value="Calculate Course fees" vertex="1">
+          <mxGeometry height="40" width="140" x="475" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-18" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-19" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="HnQro-MJMd22eXMn7Z4B-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1" value="Add applicable fees" vertex="1">
+          <mxGeometry height="40" width="140" x="585" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-20" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-21" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="HnQro-MJMd22eXMn7Z4B-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1" value="Calculate Total amount" vertex="1">
+          <mxGeometry height="40" width="140" x="475" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-22" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-24" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="HnQro-MJMd22eXMn7Z4B-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-23" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-24" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="HnQro-MJMd22eXMn7Z4B-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-24" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fontStyle=1" value="Bill Calculation successfull ?" vertex="1">
+          <mxGeometry height="100" width="100" x="495" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-25" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-26" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="HnQro-MJMd22eXMn7Z4B-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1" value="Generate Student Bill" vertex="1">
+          <mxGeometry height="40" width="140" x="315" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-27" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-28" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="HnQro-MJMd22eXMn7Z4B-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1" value="Display / Send bill" vertex="1">
+          <mxGeometry height="40" width="140" x="315" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-29" edge="1" parent="1" source="HnQro-MJMd22eXMn7Z4B-30" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="HnQro-MJMd22eXMn7Z4B-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1" value="Show error" vertex="1">
+          <mxGeometry height="40" width="140" x="625" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=#FFFFFF;fontStyle=1" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="680" y="805" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-32" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=#000000;fontStyle=1" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="685" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="[YES]" vertex="1">
+          <mxGeometry height="20" width="50" x="455" y="724" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="[NO]" vertex="1">
+          <mxGeometry height="20" width="40" x="585" y="724" as="geometry" />
+        </mxCell>
+        <mxCell id="HnQro-MJMd22eXMn7Z4B-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=17;fontStyle=1" value="ACTIVITY DIAGRAM FOR &quot;GENERATE STUDENT BILL&quot; USECASE IN UNIVERSITY REGISTRATION SYSTEM" vertex="1">
+          <mxGeometry height="30" width="530" x="270" y="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

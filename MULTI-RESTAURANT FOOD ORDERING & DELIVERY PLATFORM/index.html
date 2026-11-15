@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multi-Restaurant Food Ordering &amp; Delivery Platform | UML Diagrams</title>
+<meta name="description" content="Interactive viewer for the UML diagrams of a Multi-Restaurant Food Ordering and Delivery Platform: use case, class, activity, state and sequence diagrams.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --board: #e8eeee;
+    --panel: #ffffff;
+    --ink: #14262b;
+    --muted: #51656a;
+    --line: #c5d3d4;
+    --teal: #0e4f52;
+    --teal-dark: #0a3b3d;
+    --turmeric: #e3a008;
+    --turmeric-soft: #fbefc9;
+    --radius: 10px;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--board);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--teal); }
+  :focus-visible { outline: 3px solid var(--turmeric); outline-offset: 2px; }
+
+  /* ---------- header ---------- */
+  .masthead {
+    background: var(--teal);
+    color: #fff;
+    padding: 2.5rem 1.25rem 4.5rem;
+  }
+  .masthead-inner { max-width: 1180px; margin: 0 auto; }
+  .masthead h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(1.9rem, 4.6vw, 3.4rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+    max-width: 18ch;
+  }
+  .masthead p {
+    margin: 0;
+    max-width: 62ch;
+    color: #cfe3e3;
+    font-size: 1.05rem;
+  }
+
+  /* ---------- tabs ---------- */
+  .wrap { max-width: 1180px; margin: -2.4rem auto 0; padding: 0 1.25rem 3rem; }
+  .tabs {
+    display: flex;
+    gap: .4rem;
+    overflow-x: auto;
+    padding: .4rem;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    scrollbar-width: thin;
+  }
+  .tab {
+    flex: 0 0 auto;
+    font: 500 .95rem/1 var(--body);
+    color: var(--ink);
+    background: transparent;
+    border: 0;
+    border-radius: 7px;
+    padding: .8rem 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .tab:hover { background: var(--board); }
+  .tab[aria-selected="true"] {
+    background: var(--teal);
+    color: #fff;
+    box-shadow: inset 0 -3px 0 var(--turmeric);
+  }
+
+  /* ---------- diagram panel ---------- */
+  .stage {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .viewer {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .55rem .7rem;
+    border-bottom: 1px solid var(--line);
+    background: #f7faf9;
+  }
+  .toolbar .title {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-right: auto;
+    padding-left: .3rem;
+  }
+  .btn {
+    font: 500 .9rem/1 var(--body);
+    min-width: 2.4rem;
+    height: 2.4rem;
+    padding: 0 .7rem;
+    color: var(--ink);
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .btn:hover { border-color: var(--teal); background: var(--turmeric-soft); }
+  .zoom-level { min-width: 3.2rem; text-align: center; font-size: .9rem; color: var(--muted); }
+
+  .canvas {
+    height: min(74vh, 820px);
+    min-height: 360px;
+    overflow: auto;
+    background:
+      linear-gradient(var(--board) 1px, transparent 1px) 0 0 / 24px 24px,
+      linear-gradient(90deg, var(--board) 1px, transparent 1px) 0 0 / 24px 24px,
+      #fff;
+    cursor: grab;
+    padding: 1rem;
+    overscroll-behavior: contain;
+  }
+  .canvas.dragging { cursor: grabbing; user-select: none; }
+  .canvas img {
+    display: block;
+    margin: 0 auto;
+    max-width: none;
+    height: auto;
+    background: #fff;
+    border: 1px solid var(--line);
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+  .missing {
+    display: none;
+    margin: 2rem auto;
+    max-width: 44ch;
+    padding: 1rem 1.2rem;
+    background: var(--turmeric-soft);
+    border-left: 4px solid var(--turmeric);
+    border-radius: 6px;
+  }
+
+  .hint { margin: 0; padding: .55rem .9rem; font-size: .85rem; color: var(--muted); border-top: 1px solid var(--line); }
+
+  /* ---------- notes ---------- */
+  .notes {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem;
+    align-self: start;
+  }
+  .notes h2 { font-family: var(--display); font-size: 1.35rem; line-height: 1.2; margin: 0 0 .6rem; }
+  .notes p { margin: 0 0 1rem; color: var(--muted); }
+  .notes h3 { font-size: .95rem; margin: 0 0 .4rem; }
+  .notes ul { margin: 0; padding-left: 1.1rem; }
+  .notes li { margin-bottom: .35rem; }
+  .pager { display: flex; justify-content: space-between; gap: .5rem; margin-top: 1.2rem; }
+  .pager .btn { flex: 1; }
+
+
+  /* ---------- diagram contents ---------- */
+  .contents { margin-top: 1.5rem; }
+  .contents > h2 { font-family: var(--display); font-size: 1.6rem; margin: 0 0 1rem; }
+  .contents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1rem;
+    align-items: start;
+  }
+  .dsec {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--teal);
+    border-radius: var(--radius);
+    padding: 1rem 1.2rem 1.1rem;
+    min-width: 0;
+  }
+  .dsec.wide { grid-column: 1 / -1; }
+  .dsec h3 { font-family: var(--display); font-size: 1.15rem; margin: 0 0 .7rem; }
+  .dsec ul { margin: 0; padding-left: 1.1rem; }
+  .dsec li { margin-bottom: .3rem; }
+  .dsec dl { margin: 0; }
+  .dsec dt { font-weight: 600; margin-top: .7rem; }
+  .dsec dt:first-child { margin-top: 0; }
+  .dsec dd { margin: .1rem 0 0; color: var(--muted); }
+  .twrap { overflow-x: auto; }
+  .dsec table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  .dsec th, .dsec td { text-align: left; padding: .5rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .dsec th { background: var(--board); font-weight: 600; white-space: nowrap; }
+  .dsec tr:last-child td { border-bottom: 0; }
+
+  footer { max-width: 1180px; margin: 0 auto; padding: 0 1.25rem 2.5rem; color: var(--muted); font-size: .9rem; }
+
+  @media (max-width: 880px) {
+    .stage { grid-template-columns: 1fr; }
+    .canvas { height: 62vh; }
+    .toolbar .title { display: none; }
+    .toolbar { justify-content: center; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <h1>Multi-Restaurant Food Ordering &amp; Delivery Platform</h1>
+    <p>UML models of a platform that connects customers, restaurants, delivery agents and an external payment gateway. Pick a diagram below, then zoom and drag to explore it.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="tabs" role="tablist" aria-label="UML diagrams" id="tabs"></div>
+
+  <section class="stage" aria-live="polite">
+    <div class="viewer">
+      <div class="toolbar">
+        <span class="title" id="viewer-title"></span>
+        <button class="btn" id="zoom-out" aria-label="Zoom out" title="Zoom out">&minus;</button>
+        <span class="zoom-level" id="zoom-level">100%</span>
+        <button class="btn" id="zoom-in" aria-label="Zoom in" title="Zoom in">+</button>
+        <button class="btn" id="zoom-fit" title="Fit diagram to width">Fit</button>
+        <a class="btn" id="open-full" target="_blank" rel="noopener" title="Open the image in a new tab">Open image</a>
+      </div>
+      <div class="canvas" id="canvas" tabindex="0" aria-label="Diagram viewer. Drag to pan, scroll to move around.">
+        <img id="diagram" alt="">
+        <div class="missing" id="missing">This image could not be loaded. Check that the file name matches exactly, including capital letters.</div>
+      </div>
+      <p class="hint">Drag to pan. Ctrl + scroll or the buttons to zoom. Arrow keys switch diagrams when a tab is selected.</p>
+    </div>
+
+    <aside class="notes">
+      <h2 id="notes-title"></h2>
+      <p id="notes-summary"></p>
+      <h3>What to look for</h3>
+      <ul id="notes-list"></ul>
+      <div class="pager">
+        <button class="btn" id="prev">&larr; Previous</button>
+        <button class="btn" id="next">Next &rarr;</button>
+      </div>
+    </aside>
+  </section>
+
+  <section class="contents" aria-labelledby="contents-title">
+    <h2 id="contents-title">What is in this diagram</h2>
+    <div class="contents-grid" id="details"></div>
+  </section>
+</main>
+
+<footer>
+  Multi-Restaurant Food Ordering &amp; Delivery Platform &middot; UML design models
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  // File names must match the images in the same folder as this page.
+  var diagrams = [
+    {
+      id: "usecase",
+      tab: "Use case",
+      title: "Use case diagram",
+      file: "USECASE DIAGRAM.png",
+      alt: "Use case diagram showing the Customer, Restaurant, Delivery Agent, Admin and Payment Gateway actors and their use cases",
+      summary: "Who uses the platform and what they can do. Five actors share 26 use cases.",
+      points: [
+        "Actors: Customer, Restaurant, Delivery Agent, Admin and Payment Gateway.",
+        "Place Order includes Make Payment; Cancel Order includes Process Refund.",
+        "Apply Coupon extends Place Order, and Search Dishes extends Browse Restaurants & Menu.",
+        "Reassign Delivery Agent extends Accept / Decline Delivery Request."
+      ]
+    },
+    {
+      id: "class",
+      tab: "Class",
+      title: "Class diagram",
+      file: "CLASS DIAGRAM.png",
+      alt: "Class diagram with eleven classes including Customer, Order, OrderItem, MenuItem, Restaurant, Coupon, Payment, PaymentGateway, Delivery, DeliveryAgent and Notification",
+      summary: "The data and operations behind the platform, and how the eleven classes relate.",
+      points: [
+        "A Customer places many Orders; each Order contains one or more OrderItems.",
+        "Each OrderItem refers to one MenuItem, and each MenuItem belongs to a Restaurant.",
+        "Each Order has one Payment and one Delivery.",
+        "Payment depends on PaymentGateway; a DeliveryAgent handles many Deliveries."
+      ]
+    },
+    {
+      id: "activity",
+      tab: "Activity",
+      title: "Activity diagram",
+      file: "ACTIVITY DIAGRAM.png",
+      alt: "Swimlane activity diagram covering order placement, restaurant response, delivery assignment and refund",
+      summary: "The full order workflow across five swimlanes, including the failure paths.",
+      points: [
+        "Swimlanes: Customer, Restaurant, Platform, Delivery Agent and Payment Gateway.",
+        "A failed payment ends the flow; a rejected or timed-out order is cancelled and refunded.",
+        "After acceptance, a fork runs food preparation and agent assignment in parallel.",
+        "If an agent declines, the platform reassigns to the next nearest agent."
+      ]
+    },
+    {
+      id: "order-state",
+      tab: "Order states",
+      title: "Order state diagram",
+      file: "ORDER STATE DIAGRAM.png",
+      alt: "Nested state diagram of an order lifecycle from creation to completion, cancellation or failure",
+      summary: "The lifecycle of an order, with nested states for the restaurant, delivery assignment and delivery.",
+      points: [
+        "Restaurant Processing holds Awaiting Response, Accepted and Rejected / Timed Out.",
+        "Delivery Assignment loops through finding, requesting and reassigning agents.",
+        "Delivery in Progress moves from Picked Up to Out for Delivery to Delivered.",
+        "Payment failure or restaurant rejection leads to a cancelled or failed order."
+      ]
+    },
+    {
+      id: "payment-state",
+      tab: "Payment states",
+      title: "Payment state diagram",
+      file: "PAYMENT STATE DIAGRAM.png",
+      alt: "Nested state diagram of payment processing and refund processing",
+      summary: "How a payment moves from initiation to success or failure, and how refunds are processed.",
+      points: [
+        "Payment Processing: validating, gateway processing, then verifying the transaction.",
+        "Success leads to Payment Successful; failure or timeout leads to Payment Failed.",
+        "Refund Processing: requested, gateway processing, then refund verification.",
+        "A refund ends as either Refunded or Refund Failed."
+      ]
+    },
+    {
+      id: "sequence",
+      tab: "Sequence",
+      title: "Sequence diagram",
+      file: "SEQUENCE DIAGRAM.png",
+      alt: "Sequence diagram of 20 messages between the customer, app, order controller, restaurant service, payment service, payment gateway and delivery agent",
+      summary: "The order of messages in a successful order, from browsing to delivery notification.",
+      points: [
+        "Seven participants exchange 20 numbered messages.",
+        "The Order Controller coordinates the restaurant, payment and delivery steps.",
+        "Payment is confirmed through the Payment Service and gateway before the order goes to the restaurant.",
+        "The customer is notified once the delivery agent confirms delivery."
+      ]
+    }
+  ];
+
+
+  // Detailed contents of each diagram.
+  // list: plain bullets | dl: [term, description] | table: cols + rows
+  var details = {
+    usecase: [
+      { heading: "Actors", type: "dl", wide: false, rows: [
+        ["Customer", "Browses restaurants and menus, searches dishes, adds items to the cart, places and cancels orders, applies coupons, tracks orders, rates orders and views order history."],
+        ["Restaurant", "Manages its menu, accepts or rejects orders (or lets them time out) and updates order status."],
+        ["Delivery Agent", "Accepts or declines delivery requests, updates delivery status and confirms delivery."],
+        ["Admin", "Manages restaurants, users and coupons, and views reports."],
+        ["Payment Gateway", "External system that generates the bill and processes payments and refunds."]
+      ]},
+      { heading: "Use cases (26)", type: "dl", rows: [
+        ["Customer (10)", "Register / Login, Browse Restaurants & Menu, Search Dishes, Add Items to Cart, Place Order, Apply Coupon, Track Order, Rate Order, Cancel Order, View Order History"],
+        ["Restaurant (4)", "Manage Menu, Accept Order, Reject Order (or Timeout), Update Order Status"],
+        ["Delivery Agent (3)", "Accept / Decline Delivery Request, Update Delivery Status, Confirm Delivery"],
+        ["Admin (3)", "Manage Restaurants and Users, Manage Coupons, View Reports"],
+        ["Payment Gateway (3)", "Generate Bill, Process Payment, Process Refund"],
+        ["System (3)", "Make Payment, Assign Nearest Delivery Agent, Reassign Delivery Agent"]
+      ]},
+      { heading: "Include relationships (always happen)", type: "list", rows: [
+        "Place Order includes Make Payment",
+        "Cancel Order includes Process Refund",
+        "Accept Order includes Assign Nearest Delivery Agent"
+      ]},
+      { heading: "Extend relationships (optional or conditional)", type: "list", rows: [
+        "Search Dishes extends Browse Restaurants & Menu",
+        "Apply Coupon extends Place Order",
+        "Reassign Delivery Agent extends Accept / Decline Delivery Request, when an agent declines or does not respond"
+      ]}
+    ],
+
+    class: [
+      { heading: "Order side (6 classes)", type: "dl", rows: [
+        ["Customer", "Attributes: customerId, name, email, phone, address. Operations: placeOrder(), viewOrder(), cancelOrder(), applyCoupon()."],
+        ["Order", "Attributes: orderId, orderDate, status, totalAmount, couponCode. Operations: addItem(), removeItem(), calculateTotal(), trackOrder()."],
+        ["OrderItem", "Attributes: itemId, quantity, price, subtotal. Operation: getSubtotal()."],
+        ["MenuItem", "Attributes: itemId, name, description, price, isAvailable. Operation: updateAvailability()."],
+        ["Restaurant", "Attributes: restaurantId, name, rating, address, cuisineType. Operations: acceptOrder(), rejectOrder(), updateMenu()."],
+        ["Coupon", "Attributes: couponId, code, discountType, value, expiryDate. Operations: isValid(), applyDiscount()."]
+      ]},
+      { heading: "Payment and delivery side (5 classes)", type: "dl", rows: [
+        ["Payment", "Attributes: paymentId, amount, method, status, transactionId. Operations: processPayment(), refund()."],
+        ["PaymentGateway", "Attributes: gatewayId, name. Operation: processTransaction()."],
+        ["Delivery", "Attributes: deliveryId, status, assignedTime, deliveredTime. Operations: updateStatus(), reassignAgent()."],
+        ["DeliveryAgent", "Attributes: agentId, name, phone, location, status. Operations: acceptDelivery(), updateStatus()."],
+        ["Notification", "Attributes: notificationId, type, message, sentAt. Operation: sendNotification()."]
+      ]},
+      { heading: "Access modifiers", type: "list", rows: [
+        "+ public: accessible from outside the class",
+        "- private: accessible only within the class",
+        "# protected: accessible within the class and its subclasses"
+      ]},
+      { heading: "Relationships and multiplicities", type: "table", wide: true,
+        cols: ["Relationship", "Multiplicity", "Meaning"], rows: [
+        ["Customer – Order", "1 : 0..*", "One customer can place many orders"],
+        ["Order – OrderItem", "1 : 1..*", "One order contains one or more items (composition)"],
+        ["OrderItem – MenuItem", "0..* : 1", "Each order item refers to one menu item"],
+        ["Restaurant – MenuItem", "1 : 0..*", "One restaurant has many menu items"],
+        ["Customer – Coupon", "1 : 0..*", "A customer can use many coupons over time"],
+        ["Order – Payment", "1 : 1", "Each order has one payment record"],
+        ["Payment – PaymentGateway", "Dependency", "Payment uses the external gateway"],
+        ["Order – Delivery", "1 : 1", "Each order has one delivery record"],
+        ["DeliveryAgent – Delivery", "1 : 0..*", "One agent can handle many deliveries over time"],
+        ["Restaurant – DeliveryAgent", "1 : 0..*", "Delivery agents may be associated with restaurants"],
+        ["Notification – Delivery", "Dependency", "Notification uses delivery information for updates"]
+      ]}
+    ],
+
+    activity: [
+      { heading: "Swimlanes and their activities", type: "dl", wide: true, rows: [
+        ["Customer", "Browse menu and add items to cart; apply coupon (optional) and place order; receive payment-failed notice; receive order and confirm delivery."],
+        ["Restaurant", "Decide whether the order is accepted in time; prepare food."],
+        ["Platform (System)", "Validate cart and coupon and calculate total; check whether payment succeeded; send order to restaurant and start response timer; cancel order and notify customer; find nearest available agent and send request; reassign to next nearest agent; mark order delivered and close order."],
+        ["Delivery Agent", "Decide whether to accept the request; go to restaurant; pick up order and deliver to customer."],
+        ["Payment Gateway", "Charge customer (payment request); refund payment."]
+      ]},
+      { heading: "Control nodes", type: "list", rows: [
+        "Initial node: start of the ordering workflow",
+        "Decisions: Payment successful? / Accepted in time? / Agent accepts?",
+        "Fork: after acceptance, food preparation and agent assignment start together",
+        "Join: waits until the food is ready and the agent is on the way",
+        "Flow final (x2): ends the payment-failed path and the refund path",
+        "Activity final: order delivered and closed"
+      ]},
+      { heading: "Paths through the diagram", type: "list", rows: [
+        "Normal: browse, order, pay, restaurant accepts, prepare food and assign agent in parallel, pick up, deliver, close",
+        "Payment fails: customer receives a notice and the flow ends",
+        "Restaurant rejects or times out: order is cancelled, customer is notified and the payment is refunded",
+        "Agent declines: the platform reassigns to the next nearest agent until one accepts"
+      ]}
+    ],
+
+    "order-state": [
+      { heading: "Main states", type: "list", rows: [
+        "Order Created",
+        "Payment Processing",
+        "Restaurant Processing (composite)",
+        "Preparing Order",
+        "Ready for Pickup",
+        "Delivery Assignment (composite)",
+        "Delivery in Progress (composite)",
+        "Order Completed",
+        "Cancelled",
+        "Order Failed"
+      ]},
+      { heading: "Nested states", type: "dl", rows: [
+        ["Restaurant Processing", "Awaiting Restaurant Response, Accepted, Rejected / Timed Out. A timer of 5 minutes limits the wait."],
+        ["Delivery Assignment", "Finding Nearest Agent, Request Sent, Waiting for Agent Response, Agent Assigned, Reassigning Agent."],
+        ["Delivery in Progress", "Order Picked Up, Out for Delivery, Delivered."]
+      ]},
+      { heading: "Transitions and outcomes", type: "list", rows: [
+        "[payment successful] moves the order to Restaurant Processing",
+        "[payment failed / show error] moves it to Cancelled",
+        "[accepted] moves it to Preparing Order, then Ready for Pickup",
+        "Rejected / Timed Out notifies the customer and ends in Cancelled",
+        "[agent declines / no response] leads to Reassigning Agent",
+        "[agent accepts] leads to Agent Assigned, then Delivery in Progress",
+        "Delivered leads to Order Completed; Cancelled leads to Order Failed; both reach the final state"
+      ]}
+    ],
+
+    "payment-state": [
+      { heading: "Main states", type: "list", rows: [
+        "Payment Initiated",
+        "Payment Processing (composite)",
+        "Payment Successful",
+        "Payment Failed",
+        "Refund Initiated",
+        "Refund Processing (composite)",
+        "Refunded",
+        "Refund Failed"
+      ]},
+      { heading: "Nested states", type: "dl", rows: [
+        ["Payment Processing", "Validating Payment, Gateway Processing, Verifying Transaction."],
+        ["Refund Processing", "Refund Requested, Gateway Processing, Refund Verification."]
+      ]},
+      { heading: "Transitions and outcomes", type: "list", rows: [
+        "[success] after verification leads to Payment Successful",
+        "[failure / timeout] leads to Payment Failed, then Refund Initiated",
+        "After Refund Initiated, the refund goes through Refund Processing",
+        "[success] ends in Refunded; [failure] ends in Refund Failed",
+        "Refunded and Refund Failed both reach the final state, so a failed refund is never treated as completed"
+      ]}
+    ],
+
+    sequence: [
+      { heading: "Participants (lifelines)", type: "dl", rows: [
+        ["Customer", "The user who starts the ordering process."],
+        ["Customer App", "The interface used to browse restaurants, select items and place the order."],
+        ["Order Controller", "Coordinates the whole workflow and talks to the other services."],
+        ["Restaurant Service", "Provides restaurant details and handles order acceptance and food preparation."],
+        ["Payment Service", "Handles payment requests and talks to the external gateway."],
+        ["Payment Gateway", "Processes the transaction and returns a response."],
+        ["Delivery Agent", "Accepts the assignment and completes the delivery."]
+      ]},
+      { heading: "Notation", type: "list", rows: [
+        "Dashed vertical lines are lifelines",
+        "Rectangles on a lifeline are activation bars",
+        "Solid arrows are requests (synchronous calls)",
+        "Dashed arrows are return messages"
+      ]},
+      { heading: "Messages in order", type: "table", wide: true,
+        cols: ["No.", "From", "To", "Message"], rows: [
+        ["1", "Customer", "Customer App", "Browse Restaurants"],
+        ["2", "Customer App", "Customer", "Restaurant List"],
+        ["3", "Customer", "Customer App", "Select Items & Apply Coupon"],
+        ["4", "Customer App", "Order Controller", "Place Order"],
+        ["5", "Order Controller", "Restaurant Service", "Get Restaurant List"],
+        ["6", "Restaurant Service", "Order Controller", "Restaurant Details"],
+        ["7", "Order Controller", "Payment Service", "Process Payment"],
+        ["8", "Payment Service", "Payment Gateway", "Initiate Payment"],
+        ["9", "Payment Gateway", "Payment Service", "Payment Response"],
+        ["10", "Payment Service", "Order Controller", "Payment Confirmed"],
+        ["11", "Order Controller", "Restaurant Service", "Send Order"],
+        ["12", "Restaurant Service", "Order Controller", "Acceptance"],
+        ["13", "Order Controller", "Delivery Agent", "Assign Delivery Agent"],
+        ["14", "Delivery Agent", "Order Controller", "Agent Confirmed"],
+        ["15", "Order Controller", "Restaurant Service", "Prepare Food"],
+        ["16", "Restaurant Service", "Order Controller", "Food Ready"],
+        ["17", "Order Controller", "Delivery Agent", "Notify Delivery"],
+        ["18", "Delivery Agent", "Order Controller", "Delivery Confirmed"],
+        ["19", "Order Controller", "Customer App", "Order Delivered"],
+        ["20", "Customer App", "Customer", "Delivery Notification"]
+      ]}
+    ]
+  };
+
+  function renderDetails(id) {
+    var host = document.getElementById("details");
+    host.innerHTML = "";
+    (details[id] || []).forEach(function (sec) {
+      var box = document.createElement("div");
+      box.className = "dsec" + (sec.wide ? " wide" : "");
+      var h = document.createElement("h3");
+      h.textContent = sec.heading;
+      box.appendChild(h);
+
+      if (sec.type === "list") {
+        var ul = document.createElement("ul");
+        sec.rows.forEach(function (t) {
+          var li = document.createElement("li");
+          li.textContent = t;
+          ul.appendChild(li);
+        });
+        box.appendChild(ul);
+      } else if (sec.type === "dl") {
+        var dl = document.createElement("dl");
+        sec.rows.forEach(function (r) {
+          var dt = document.createElement("dt");
+          dt.textContent = r[0];
+          var dd = document.createElement("dd");
+          dd.textContent = r[1];
+          dl.appendChild(dt);
+          dl.appendChild(dd);
+        });
+        box.appendChild(dl);
+      } else if (sec.type === "table") {
+        var wrap = document.createElement("div");
+        wrap.className = "twrap";
+        var table = document.createElement("table");
+        var thead = document.createElement("thead");
+        var hr = document.createElement("tr");
+        sec.cols.forEach(function (c) {
+          var th = document.createElement("th");
+          th.scope = "col";
+          th.textContent = c;
+          hr.appendChild(th);
+        });
+        thead.appendChild(hr);
+        table.appendChild(thead);
+        var tbody = document.createElement("tbody");
+        sec.rows.forEach(function (r) {
+          var tr = document.createElement("tr");
+          r.forEach(function (cell) {
+            var td = document.createElement("td");
+            td.textContent = cell;
+            tr.appendChild(td);
+          });
+          tbody.appendChild(tr);
+        });
+        table.appendChild(tbody);
+        wrap.appendChild(table);
+        box.appendChild(wrap);
+      }
+      host.appendChild(box);
+    });
+  }
+
+  // If your images are in a subfolder, set it here, e.g. "images/" (keep the trailing slash).
+  var IMAGE_BASE = "";
+
+  var tabsEl = document.getElementById("tabs");
+  var img = document.getElementById("diagram");
+  var canvas = document.getElementById("canvas");
+  var missing = document.getElementById("missing");
+  var zoomLabel = document.getElementById("zoom-level");
+  var current = 0;
+  var zoom = 1;          // 1 = fit to canvas width
+  var MIN = 0.5, MAX = 4;
+
+  // ---- build tabs ----
+  diagrams.forEach(function (d, i) {
+    var b = document.createElement("button");
+    b.className = "tab";
+    b.type = "button";
+    b.setAttribute("role", "tab");
+    b.id = "tab-" + d.id;
+    b.textContent = d.tab;
+    b.addEventListener("click", function () { show(i, true); });
+    tabsEl.appendChild(b);
+  });
+
+  tabsEl.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowRight") { e.preventDefault(); show((current + 1) % diagrams.length, true, true); }
+    if (e.key === "ArrowLeft")  { e.preventDefault(); show((current - 1 + diagrams.length) % diagrams.length, true, true); }
+  });
+
+  // ---- zoom helpers ----
+  function applyZoom() {
+    var avail = canvas.clientWidth - 34;
+    img.style.width = Math.round(avail * zoom) + "px";
+    zoomLabel.textContent = Math.round(zoom * 100) + "%";
+  }
+  function setZoom(z) {
+    var oldW = img.clientWidth || 1;
+    var cx = (canvas.scrollLeft + canvas.clientWidth / 2) / oldW;
+    var cy = (canvas.scrollTop + canvas.clientHeight / 2) / (img.clientHeight || 1);
+    zoom = Math.min(MAX, Math.max(MIN, z));
+    applyZoom();
+    canvas.scrollLeft = cx * img.clientWidth - canvas.clientWidth / 2;
+    canvas.scrollTop = cy * img.clientHeight - canvas.clientHeight / 2;
+  }
+  document.getElementById("zoom-in").addEventListener("click", function () { setZoom(zoom * 1.25); });
+  document.getElementById("zoom-out").addEventListener("click", function () { setZoom(zoom / 1.25); });
+  document.getElementById("zoom-fit").addEventListener("click", function () {
+    zoom = 1; applyZoom(); canvas.scrollTo(0, 0);
+  });
+  canvas.addEventListener("wheel", function (e) {
+    if (!e.ctrlKey && !e.metaKey) return;
+    e.preventDefault();
+    setZoom(zoom * (e.deltaY < 0 ? 1.1 : 1 / 1.1));
+  }, { passive: false });
+  window.addEventListener("resize", applyZoom);
+
+  // ---- drag to pan (mouse and pen; touch uses native scrolling) ----
+  var drag = null;
+  canvas.addEventListener("pointerdown", function (e) {
+    if (e.pointerType === "touch") return;
+    drag = { x: e.clientX, y: e.clientY, l: canvas.scrollLeft, t: canvas.scrollTop };
+    canvas.classList.add("dragging");
+    canvas.setPointerCapture(e.pointerId);
+  });
+  canvas.addEventListener("pointermove", function (e) {
+    if (!drag) return;
+    canvas.scrollLeft = drag.l - (e.clientX - drag.x);
+    canvas.scrollTop = drag.t - (e.clientY - drag.y);
+  });
+  function endDrag() { drag = null; canvas.classList.remove("dragging"); }
+  canvas.addEventListener("pointerup", endDrag);
+  canvas.addEventListener("pointercancel", endDrag);
+  canvas.addEventListener("dblclick", function () {
+    if (zoom > 1.01) { zoom = 1; applyZoom(); canvas.scrollTo(0, 0); }
+    else { setZoom(2); }
+  });
+
+  // ---- show a diagram ----
+  function show(i, updateHash, keepFocus) {
+    current = i;
+    var d = diagrams[i];
+
+    Array.prototype.forEach.call(tabsEl.children, function (t, n) {
+      var on = n === i;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+    });
+    if (keepFocus) tabsEl.children[i].focus();
+    tabsEl.children[i].scrollIntoView({ block: "nearest", inline: "center" });
+
+    missing.style.display = "none";
+    img.style.display = "block";
+    img.alt = d.alt;
+    img.src = encodeURI(IMAGE_BASE + d.file);
+    zoom = 1;
+    applyZoom();
+    canvas.scrollTo(0, 0);
+
+    document.getElementById("viewer-title").textContent = d.title;
+    document.getElementById("open-full").href = encodeURI(IMAGE_BASE + d.file);
+    renderDetails(d.id);
+    document.getElementById("notes-title").textContent = d.title;
+    document.getElementById("notes-summary").textContent = d.summary;
+    var list = document.getElementById("notes-list");
+    list.innerHTML = "";
+    d.points.forEach(function (p) {
+      var li = document.createElement("li");
+      li.textContent = p;
+      list.appendChild(li);
+    });
+
+    if (updateHash) history.replaceState(null, "", "#" + d.id);
+  }
+
+  img.addEventListener("load", applyZoom);
+  img.addEventListener("error", function () {
+    img.style.display = "none";
+    missing.textContent = "Could not load \"" + IMAGE_BASE + diagrams[current].file +
+      "\". The image must be in the same folder as index.html with exactly this name " +
+      "(capital letters matter on GitHub Pages), or set IMAGE_BASE in the script to its folder.";
+    missing.style.display = "block";
+  });
+
+  document.getElementById("prev").addEventListener("click", function () {
+    show((current - 1 + diagrams.length) % diagrams.length, true);
+  });
+  document.getElementById("next").addEventListener("click", function () {
+    show((current + 1) % diagrams.length, true);
+  });
+
+  function fromHash() {
+    var id = location.hash.replace("#", "");
+    for (var i = 0; i < diagrams.length; i++) if (diagrams[i].id === id) return i;
+    return 0;
+  }
+  window.addEventListener("hashchange", function () { show(fromHash(), false); });
+  show(fromHash(), false);
+})();
+</script>
+</body>
+</html>
